@@ -1,16 +1,21 @@
 body {
   width: 65%;
   margin: auto;
-  background-color: #EDEDED;
+  background-color: #43464b;
 }
 h1, h2 {
   text-align: center;
+  font-family: "Nunito", Helvetica;
+}
+h1 {
+  color: #BFC8D6;
+  font-weight: bold;
 }
 section {
   border: 2px solid #333;
   margin: 1rem 0;
   padding: 1rem;
-  background-color: #FFF;
+  background-color: #868C96;
 }
 main {
   display: grid;
@@ -58,6 +63,9 @@ section.scoreboard {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+p {
+  font-family: "Nunito", Helvetica;
 }
 #pscore, #oscore {
   font-size: 2rem;
