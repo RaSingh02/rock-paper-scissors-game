@@ -9,24 +9,30 @@
     <link href="css/modnorm.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body onload="initialPick()">
     <h1>Rock, Paper, Scissors</h1>
     <main class="choice">
       <section class="pchoice">
         <h2>You choose . . .</h2>
         <div class="images">
-          <img id="r-img" src="svg/rock.svg" alt="hand as rock">
-          <img id="p-img" src="svg/paper.svg" alt="hand as paper">
-          <img id="s-img" src="svg/scissors.svg" alt="hand as scissors">
+          <a class="rock-hand" onclick="rockPick()">
+            <img id="r-img" src="img/rock.svg" alt="hand as rock">
+            </a>
+          <a class="paper-hand" onclick="paperPick()">
+            <img id="p-img" src="img/paper.svg" alt="hand as paper">
+            </a>
+          <a class="scissors-hand" onclick="scissorsPick()">
+            <img id="s-img" src="img/scissors.svg" alt="hand as scissors">
+            </a>
         </div>
       </section>
       <section class="ochoice">
         <h2>Opponent chooses . . .</h2>
-        <img id="o-img" src="svg/mystery.svg" alt="" >
+        <img id="o-img" src="">
       </section>
     </main>
     <section class="scoreboard">
-      <h2 id="result">It's a Tie.</h2>
+      <h2 id="result">Click an option to play.</h2>
       <div id="play" class="score">
         <p id="pscore">0</p>
         <p class="label">Player</p>
@@ -34,6 +40,10 @@
       <div id="opp" class="score">
         <p id="oscore">0</p>
         <p class="label">Opponent</p>
+      </div>
+      <div id="games" class="score">
+        <p id="gameTotal">0</p>
+        <p class="label">Total Games</p>
       </div>
     </section>
   <script src="js/page.js"></script>

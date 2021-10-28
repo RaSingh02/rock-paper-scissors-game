@@ -45,7 +45,7 @@ main section {
 section.scoreboard {
   border-style: dashed;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
 }
 @media screen and (max-width: 768px)  {
@@ -56,7 +56,7 @@ section.scoreboard {
   border-bottom: 2px dotted #AAA;
   padding-bottom: 1rem;
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
 }
 .score {
   display: flex;
@@ -67,7 +67,7 @@ section.scoreboard {
 p {
   font-family: "Nunito", Helvetica;
 }
-#pscore, #oscore {
+#pscore, #oscore, #gameTotal {
   font-size: 2rem;
   font-weight: 800;
   line-height: 1;
