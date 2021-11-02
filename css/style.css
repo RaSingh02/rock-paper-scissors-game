@@ -12,7 +12,8 @@ h1 {
   font-weight: bold;
 }
 section {
-  border: 2px solid #333;
+  border: 5px solid #968768;
+  border-radius: 1.5rem;
   margin: 1rem 0;
   padding: 1rem;
   background-color: #868C96;
@@ -43,7 +44,6 @@ main section {
   opacity: 100%;
 }
 section.scoreboard {
-  border-style: dashed;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
@@ -76,4 +76,19 @@ p {
 p.label {
   line-height: 1;
   margin-top: 0;
+}
+
+footer {
+  margin-top: 9.9rem;
+  background-color: #778396;
+  padding: .35rem;
+  color: #4D5157;
+  text-align: center;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  font-weight: bold;
+  color: #868C96;
 }
