@@ -85,9 +85,11 @@ footer {
   color: #4D5157;
   text-align: center;
 }
+
 footer a {
   color: white;
 }
+
 footer a:hover {
   font-weight: bold;
   color: #868C96;
